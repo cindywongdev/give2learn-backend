@@ -6,22 +6,22 @@ const mongoose = require('./connection')
 const {Schema, model } = mongoose;
 
 const DonationSchema = new Schema({
-    firstName: String,
-    lastName: String,
-    email: String,
-    phoneNumber: String,
-    fromState: String,
-    fromCity: String,
-    address1: String,
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
+    email: { type: String, required: true },
+    phoneNumber: { type: String, required: true },
+    fromState: { type: String, required: true },
+    fromCity: { type: String, required: true },
+    address1: { type: String, required: true },
     address2: String,
-    zipCode: Number,
-    deviceType: String,
-    isPC: Boolean,
-    brand: String,
-    modelType: String,
-    quantityToDonate: Number,
-    isPickup: Boolean,
-    donateDate: Date
+    zipCode: { type: Number, required: true },
+    deviceType: { type: String, required: true },
+    isPC: { type: Boolean, required: true },
+    brand: { type: String, required: true },
+    modelType: { type: String, required: true },
+    quantityToDonate: { type: Number, required: true },
+    isPickup: { type: Boolean, required: true },
+    donateDate: { type: Date, required: true }
 });
 
 

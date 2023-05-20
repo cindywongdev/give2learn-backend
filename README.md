@@ -22,22 +22,22 @@ erDiagram
     }
     DONATION {
         bigint  id
-        string  firstName
-        string  lastName
-        email   email
-        string  phoneNumber
-        string  fromState
-        string  fromCity
-        string  address1
+        string  firstName-REQ
+        string  lastName-REQ
+        email   email-REQ
+        string  phoneNumber-REQ
+        string  fromState-REQ
+        string  fromCity-REQ
+        string  address1-REQ
         string  address2
-        int     zipcode
-        string  deviceType
-        bool    isPC
-        string  brand
-        string  modelType
-        int     quantityToDonate
-        bool    isPickup
-        date    donateDate
+        int     zipcode-REQ
+        string  deviceType-REQ
+        bool    isPC-REQ
+        string  brand-REQ
+        string  modelType-REQ
+        int     quantityToDonate-REQ
+        bool    isPickup-REQ
+        date    donateDate-REQ
     }
 ```
 
