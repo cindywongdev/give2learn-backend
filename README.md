@@ -1,4 +1,4 @@
-# Quotidian Backend
+# Give2Learn Backend
 This is the API/backend for [Give2Learn](https://github.com/Mortez-usa/give2learn-frontend), a full CRUD app designed to provide refurbished laptops to schoolchildren in need. Built on a Express/Node backend (with a MongoDB) and Next.js frontend.
 
 #### Technologies Used
