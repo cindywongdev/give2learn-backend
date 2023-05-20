@@ -14,7 +14,7 @@ const DonationSchema = new Schema({
     fromCity: { type: String, required: true },
     address1: { type: String, required: true },
     address2: String,
-    zipCode: { type: Number, required: true },
+    zipcode: { type: Number, required: true },
     deviceType: { type: String, required: true },
     isPC: { type: Boolean, required: true },
     brand: { type: String, required: true },
