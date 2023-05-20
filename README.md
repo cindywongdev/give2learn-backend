@@ -14,23 +14,26 @@ This is the API/backend for [Give2Learn](https://github.com/Mortez-usa/give2lear
 erDiagram
     REQUEST {
         bigint  id
-        string  deviceType
+        string  deviceType-REQ
         bool    isPC
         string  brand
         string  dimension
-        int     quantityToRequest
-        date    requestDate
+        int     quantityToRequest-REQ
     }
     DONATION {
         bigint  id
-        string  fullName
+        string  firstName
+        string  lastName
         email   email
         string  phoneNumber
         string  fromState
         string  fromCity
-        string  address
+        string  address1
+        string  address2
+        int     zipcode
         string  deviceType
         bool    isPC
+        string  brand
         string  modelType
         int     quantityToDonate
         bool    isPickup

@@ -6,18 +6,22 @@ const mongoose = require('./connection')
 const {Schema, model } = mongoose;
 
 const DonationSchema = new Schema({
-    fullName: String,
+    firstName: String,
+    lastName: String,
     email: String,
     phoneNumber: String,
     fromState: String,
     fromCity: String,
-    address: String,
+    address1: String,
+    address2: String,
+    zipCode: Number,
     deviceType: String,
     isPC: Boolean,
+    brand: String,
     modelType: String,
     quantityToDonate: Number,
     isPickup: Boolean,
-    donateDate: Date  
+    donateDate: Date
 });
 
 

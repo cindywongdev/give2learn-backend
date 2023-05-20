@@ -6,12 +6,14 @@ const mongoose = require('./connection')
 const {Schema, model } = mongoose;
 
 const RequestSchema = new Schema({
-    deviceType: String,
-    isPC: Boolean,
+    deviceType: { type: String, required: true },
+    isPC: Boolean, // not req
     brand: String,
     dimension: String,
-    quantityToRequest: Number,
-    requestDate: Date  // not sure if wanted
+    quantityToRequest: { type: Number, required: true }
+    // for profile
+    // already filled out w hardcoded info
+    // uncheck => blank, able to type into box
 });
 
 
