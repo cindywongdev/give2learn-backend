@@ -6,17 +6,12 @@ const mongoose = require('./connection')
 const {Schema, model } = mongoose;
 
 const RequestSchema = new Schema({
-    fullName: String,
-    email: String,
-    phoneNumber: String,
-    fromState: String,
-    fromCity: String,
-    address: String,
     deviceType: String,
     isPC: Boolean,
-    modelType: String,
+    Brand: String,
+    Dimension: String,
     quantityToRequest: Number,
-    requestDate: Date  
+    // requestDate: Date  not sure if wanted
 });
 
 
