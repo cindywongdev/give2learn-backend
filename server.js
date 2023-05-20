@@ -8,6 +8,7 @@ const mongoose = require("./models/connection")
 const cors = require("cors")
 const morgan = require("morgan")
 const app = express() // Create Express App Object
+const DonationRouter = require("./controllers/donationController")
 const RequestRouter = require("./controllers/requestController")
 
 // ----------------------------
@@ -20,6 +21,7 @@ app.use(express.json())
 // ----------------------------
 // Routers----------------------
 // ----------------------------)
+app.use("/donations", DonationRouter)
 app.use("/requests", RequestRouter)
 
 

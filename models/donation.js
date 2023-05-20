@@ -5,7 +5,7 @@ const mongoose = require('./connection')
 // ----------------------------
 const {Schema, model } = mongoose;
 
-const RequestSchema = new Schema({
+const DonationSchema = new Schema({
     fullName: String,
     email: String,
     phoneNumber: String,
@@ -15,10 +15,11 @@ const RequestSchema = new Schema({
     deviceType: String,
     isPC: Boolean,
     modelType: String,
-    quantityToRequest: Number,
-    requestDate: Date  
+    quantityToDonate: Number,
+    isPickup: Boolean,
+    donateDate: Date  
 });
 
 
-const Request = model("Request", RequestSchema);
-module.exports = Request
+const Donation = model("Donation", DonationSchema);
+module.exports = Donation
