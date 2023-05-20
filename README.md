@@ -25,7 +25,7 @@ erDiagram
         string  modelType
         int     quantityToRequest
         bool    isPickup
-        date    donateDate
+        date    requestDate
     }
     DONATION {
         bigint  id
