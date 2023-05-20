@@ -8,10 +8,10 @@ const {Schema, model } = mongoose;
 const RequestSchema = new Schema({
     deviceType: String,
     isPC: Boolean,
-    Brand: String,
-    Dimension: String,
+    brand: String,
+    dimension: String,
     quantityToRequest: Number,
-    // requestDate: Date  not sure if wanted
+    requestDate: Date  // not sure if wanted
 });
 
 
