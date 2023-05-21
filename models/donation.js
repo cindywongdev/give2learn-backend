@@ -14,14 +14,14 @@ const DonationSchema = new Schema({
     fromCity: { type: String, required: true },
     address1: { type: String, required: true },
     address2: String,
-    zipcode: { type: Number, required: true },
+    zipcode: { type: String, required: true },
     deviceType: { type: String, required: true },
-    isPC: { type: Boolean, required: true },
+    isPC: { type: String, required: true },
     brand: { type: String, required: true },
     modelType: { type: String, required: true },
     quantityToDonate: { type: Number, required: true },
-    isPickup: { type: Boolean, required: true },
-    donateDate: { type: Date, required: true }
+    isPickup: { type: String, required: true },
+    donateDate: { type: String, required: true }
 });
 
 

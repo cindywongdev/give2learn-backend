@@ -7,10 +7,10 @@ const {Schema, model } = mongoose;
 
 const RequestSchema = new Schema({
     deviceType: { type: String, required: true },
-    isPC: Boolean, // not req
+    isPC: String, // not req
     brand: String,
     modelType: String,
-    quantityToRequest: { type: Number, required: true }
+    quantityToRequest: { type: String, required: true }
     // for profile
     // already filled out w hardcoded info
     // uncheck => blank, able to type into box
