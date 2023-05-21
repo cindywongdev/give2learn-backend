@@ -16,7 +16,7 @@ erDiagram
         bigint  id
         string  deviceType-REQ
         bool    isPC
-        string  brand
+        string  modelType
         string  dimension
         int     quantityToRequest-REQ
     }
