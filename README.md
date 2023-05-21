@@ -42,6 +42,17 @@ erDiagram
 ```
 
 #### Backend Route Table
+
+##### REQUESTS
+| Route Name |     URL    | HTTP Verb |        Description         |
+|------------|------------|-----------|----------------------------|
+|   Index    | /requests     |    GET    | Displays list of requests    |
+|   Show     | /requests/:id |    GET    | Shows a specific request     |
+|   Create   | /request     |    POST   | Adds new request to database |
+|   Update   | /request/:id |    PUT    | Updates a specific request   |
+|   Delete   | /request/:id |   DELETE  | Deletes a specific request   |
+
+##### DONATIONS
 | Route Name |     URL    | HTTP Verb |        Description         |
 |------------|------------|-----------|----------------------------|
 |   Index    | /requests     |    GET    | Displays list of requests    |

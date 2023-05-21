@@ -9,7 +9,7 @@ const RequestSchema = new Schema({
     deviceType: { type: String, required: true },
     isPC: Boolean, // not req
     brand: String,
-    dimension: String,
+    modelType: String,
     quantityToRequest: { type: Number, required: true }
     // for profile
     // already filled out w hardcoded info
